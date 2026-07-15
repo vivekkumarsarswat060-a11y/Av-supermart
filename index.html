@@ -173,7 +173,11 @@ text-decoration:none;
 <div class="card">
 <h3>🍚 Rice</h3>
 <p>₹60/kg</p>
-<button>Add to Cart</button>
+<button onclick="addToCart('Milk',65)">Add to Cart</button>
+
+<button onclick="addToCart('Cold Drink',40)">Add to Cart</button>
+
+<button onclick="addToCart('Biscuits',30)">Add to Cart</button>
 </div>
 
 <div class="card">
@@ -217,4 +221,7 @@ Khair, Aligarh</p>
 <a class="whatsapp" href="https://wa.me/917599509455">💬</a>
 
 </body>
+  <div class="cart-box">
+🛒 Cart: <span id="cart-count">0</span>
+  </div>
 </html>
