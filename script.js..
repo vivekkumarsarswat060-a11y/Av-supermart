@@ -23,3 +23,15 @@ if (search) {
     });
   });
 }
+let total = 0;
+
+function addToCart(product, price) {
+    cart++;
+    total += price;
+
+    document.getElementById("cart-count").innerHTML = cart;
+
+    document.getElementById("total-price").innerHTML = total;
+
+    alert(product + " added to cart!");
+}
