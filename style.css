@@ -68,10 +68,13 @@ transition:.3s;
 .whatsapp-float:hover{
 transform:scale(1.1);
 }
-.slider img{
+.hero img{
 width:100%;
-max-height:500px;
+height:280px;
 object-fit:cover;
 border-radius:15px;
+display:block;
+margin:auto;
+}
 transition:0.5s;
 }
