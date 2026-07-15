@@ -7,3 +7,19 @@ function addToCart(product, price) {
 
     document.getElementById("cart-count").innerHTML = cart;
 }
+const search = document.getElementById("search");
+
+if (search) {
+  search.addEventListener("keyup", function () {
+    const value = this.value.toLowerCase();
+    const cards = document.querySelectorAll(".card");
+
+    cards.forEach(card => {
+      if (card.innerText.toLowerCase().includes(value)) {
+        card.style.display = "block";
+      } else {
+        card.style.display = "none";
+      }
+    });
+  });
+}
