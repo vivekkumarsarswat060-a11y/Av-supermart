@@ -16,75 +16,27 @@ if (productsContainer && typeof products !== "undefined") {
 
     products.forEach(product => {
 
-        productsContainer.innerHTML += `
-        <div class="card">
-            <h3>${product.name}</h3>
+let options = "";
 
-            <p>Category: ${product.category}</p>
-
-            <label>Select Size:</label>
-
-            <select onchange="updatePrice(this,${product.id})">
-
-                <option value="250">250g - ₹${product.price250}</option>
-
-                <option value="500">500g - ₹${product.price500}</option>
-
-                <option value="1000">1kg - ₹${product.price1000}</option>
-
-            </select>
-
-            <br><br>
-
-            <button onclick="addToCart('${product.name}')">
-            Add to Cart
-            </button>
-
-        </div>
-        `;
-    });
-
-}
-
-function updatePrice(select,id){
-    console.log(select.value,id);
-}
-const searchBox = document.getElementById("searchBox");
-
-if(searchBox){
-
-searchBox.addEventListener("keyup",function(){
-
-const value=this.value.toLowerCase();
-
-document.querySelectorAll(".card").forEach(card=>{
-
-card.style.display=
-card.innerText.toLowerCase().includes(value)
-?"block":"none";
-
+product.sizes.forEach(size => {
+    options += `<option>${size.size} - ₹${size.price}</option>`;
 });
 
+productsContainer.innerHTML += `
+<div class="card">
+    <h3>${product.name}</h3>
+    <p>${product.category}</p>
+
+    <select>
+        ${options}
+    </select>
+
+    <br><br>
+
+    <button onclick="addToCart('${product.name}')">
+        Add to Cart
+    </button>
+</div>
+`;
+
 });
-
-}
-function filterProducts(category) {
-
-    const cards = document.querySelectorAll(".card");
-
-    cards.forEach(card => {
-
-        if (category === "All") {
-            card.style.display = "block";
-            return;
-        }
-
-        if (card.innerText.toLowerCase().includes(category.toLowerCase())) {
-            card.style.display = "block";
-        } else {
-            card.style.display = "none";
-        }
-
-    });
-
-}
