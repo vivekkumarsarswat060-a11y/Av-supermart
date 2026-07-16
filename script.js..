@@ -8,7 +8,7 @@ function addToCart(product) {
     document.getElementById("cart-count").innerHTML = cart;
 }
 
-const productsContainer = document.getElementById("productContainer");
+const productsContainer = document.querySelector(".products");
 
 if (productsContainer && typeof products !== "undefined") {
 
