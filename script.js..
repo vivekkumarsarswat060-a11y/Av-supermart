@@ -49,3 +49,22 @@ if (productsContainer && typeof products !== "undefined") {
 function updatePrice(select,id){
     console.log(select.value,id);
 }
+const searchBox = document.getElementById("searchBox");
+
+if(searchBox){
+
+searchBox.addEventListener("keyup",function(){
+
+const value=this.value.toLowerCase();
+
+document.querySelectorAll(".card").forEach(card=>{
+
+card.style.display=
+card.innerText.toLowerCase().includes(value)
+?"block":"none";
+
+});
+
+});
+
+}
