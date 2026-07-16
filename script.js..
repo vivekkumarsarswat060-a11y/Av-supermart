@@ -1,48 +1,9 @@
 let cart = 0;
 
-function addToCart(product, price) {
+function addToCart(product) {
     cart++;
 
     alert(product + " added to cart!");
 
     document.getElementById("cart-count").innerHTML = cart;
 }
-const search = document.getElementById("search");
-
-if (search) {
-  search.addEventListener("keyup", function () {
-    const value = this.value.toLowerCase();
-    const cards = document.querySelectorAll(".card");
-
-    cards.forEach(card => {
-      if (card.innerText.toLowerCase().includes(value)) {
-        card.style.display = "block";
-      } else {
-        card.style.display = "none";
-      }
-    });
-  });
-}
-let total = 0;
-
-function addToCart(product, price) {
-    cart++;
-    total += price;
-
-    document.getElementById("cart-count").innerHTML = cart;
-
-    document.getElementById("total-price").innerHTML = total;
-
-    alert(product + " added to cart!");
-}
-const images = [
-  "shop.png",
-  "shop.png"
-];
-
-let current = 0;
-
-setInterval(() => {
-  current = (current + 1) % images.length;
-  document.getElementById("sliderImage").src = images[current];
-}, 3000);
