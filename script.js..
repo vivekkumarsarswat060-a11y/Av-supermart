@@ -2,9 +2,7 @@ let cart = 0;
 
 function addToCart(product) {
     cart++;
-
     alert(product + " added to cart!");
-
     document.getElementById("cart-count").innerHTML = cart;
 }
 
@@ -16,29 +14,27 @@ if (productsContainer && typeof dalProducts !== "undefined") {
 
     dalProducts.forEach(product => {
 
-let options = "";
+        let options = "";
 
-product.sizes.forEach(size => {
-    options += `<option>${size.size} - ₹${size.price}</option>`;
-});
+        product.sizes.forEach(size => {
+            options += `<option>${size.size} - ₹${size.price}</option>`;
+        });
 
-productsContainer.innerHTML += `
-<div class="card">
-    <h3>${product.name}</h3>
-    <p>${product.category}</p>
+        productsContainer.innerHTML += `
+        <div class="card">
+            <h3>${product.name}</h3>
+            <p>Category: ${product.category}</p>
 
-    <select>
-        ${options}
-    </select>
+            <select>
+                ${options}
+            </select>
 
-    <br><br>
+            <br><br>
 
-    <button onclick="addToCart('${product.name}')">
-        Add to Cart
-    </button>
-</div>
-`;
-
-   });
-
+            <button onclick="addToCart('${product.name}')">
+                Add to Cart
+            </button>
+        </div>
+        `;
+    });
 }
