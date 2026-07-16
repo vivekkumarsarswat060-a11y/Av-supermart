@@ -2,17 +2,17 @@ let cart = 0;
 
 function addToCart(product) {
     cart++;
+    document.getElementById("cart-count").innerText = cart;
     alert(product + " added to cart!");
-    document.getElementById("cart-count").innerHTML = cart;
 }
 
 const productsContainer = document.querySelector(".products");
+const searchBox = document.getElementById("searchBox");
 
-if (productsContainer && typeof dalProducts !== "undefined") {
-
+function displayProducts(list) {
     productsContainer.innerHTML = "";
 
-    dalProducts.forEach(product => {
+    list.forEach(product => {
 
         let options = "";
 
@@ -23,7 +23,7 @@ if (productsContainer && typeof dalProducts !== "undefined") {
         productsContainer.innerHTML += `
         <div class="card">
             <h3>${product.name}</h3>
-            <p>Category: ${product.category}</p>
+            <p>${product.category}</p>
 
             <select>
                 ${options}
@@ -38,3 +38,16 @@ if (productsContainer && typeof dalProducts !== "undefined") {
         `;
     });
 }
+
+displayProducts(products);
+
+searchBox.addEventListener("keyup", function () {
+    const value = this.value.toLowerCase();
+
+    const filtered = products.filter(product =>
+        product.name.toLowerCase().includes(value) ||
+        product.category.toLowerCase().includes(value)
+    );
+
+    displayProducts(filtered);
+});
