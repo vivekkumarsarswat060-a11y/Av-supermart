@@ -1,6 +1,6 @@
 const products = [
 
-  ];
+
 // =====================
 // DAL (1-10)
 // =====================
@@ -95,3 +95,128 @@ sizes:[
 {size:"1kg",price:150}
 ]
 },
+// =====================
+// SPICES (11-20)
+// =====================
+
+{
+id:11,
+name:"Haldi Powder",
+category:"Spices",
+sizes:[
+{size:"50g",price:20},
+{size:"100g",price:40},
+{size:"200g",price:75},
+{size:"500g",price:180},
+{size:"1kg",price:350}
+]
+},
+{
+id:12,
+name:"Lal Mirch Powder",
+category:"Spices",
+sizes:[
+{size:"50g",price:25},
+{size:"100g",price:50},
+{size:"200g",price:95},
+{size:"500g",price:230},
+{size:"1kg",price:450}
+]
+},
+{
+id:13,
+name:"Dhaniya Powder",
+category:"Spices",
+sizes:[
+{size:"50g",price:15},
+{size:"100g",price:30},
+{size:"200g",price:55},
+{size:"500g",price:130},
+{size:"1kg",price:250}
+]
+},
+{
+id:14,
+name:"Jeera",
+category:"Spices",
+sizes:[
+{size:"50g",price:30},
+{size:"100g",price:60},
+{size:"200g",price:110},
+{size:"500g",price:270},
+{size:"1kg",price:520}
+]
+},
+{
+id:15,
+name:"Kali Mirch",
+category:"Spices",
+sizes:[
+{size:"50g",price:50},
+{size:"100g",price:100},
+{size:"200g",price:190},
+{size:"500g",price:470},
+{size:"1kg",price:900}
+]
+},
+{
+id:16,
+name:"Saunf",
+category:"Spices",
+sizes:[
+{size:"50g",price:20},
+{size:"100g",price:40},
+{size:"200g",price:75},
+{size:"500g",price:180},
+{size:"1kg",price:340}
+]
+},
+{
+id:17,
+name:"Ajwain",
+category:"Spices",
+sizes:[
+{size:"50g",price:18},
+{size:"100g",price:36},
+{size:"200g",price:70},
+{size:"500g",price:170},
+{size:"1kg",price:330}
+]
+},
+{
+id:18,
+name:"Laung",
+category:"Spices",
+sizes:[
+{size:"50g",price:65},
+{size:"100g",price:130},
+{size:"200g",price:250},
+{size:"500g",price:620},
+{size:"1kg",price:1200}
+]
+},
+{
+id:19,
+name:"Dalchini",
+category:"Spices",
+sizes:[
+{size:"50g",price:25},
+{size:"100g",price:50},
+{size:"200g",price:95},
+{size:"500g",price:230},
+{size:"1kg",price:450}
+]
+},
+{
+id:20,
+name:"Tej Patta",
+category:"Spices",
+sizes:[
+{size:"50g",price:12},
+{size:"100g",price:24},
+{size:"200g",price:45},
+{size:"500g",price:110},
+{size:"1kg",price:210}
+]
+},
+  ];
