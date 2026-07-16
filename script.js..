@@ -7,9 +7,7 @@ function addToCart(product) {
 
     document.getElementById("cart-count").innerHTML = cart;
 }
-<script src="products.js"></script>
-<script src="script.js"></script>
-</body>
+
 const productsContainer = document.querySelector(".products");
 
 if (productsContainer && typeof products !== "undefined") {
