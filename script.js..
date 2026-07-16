@@ -68,3 +68,23 @@ card.innerText.toLowerCase().includes(value)
 });
 
 }
+function filterProducts(category) {
+
+    const cards = document.querySelectorAll(".card");
+
+    cards.forEach(card => {
+
+        if (category === "All") {
+            card.style.display = "block";
+            return;
+        }
+
+        if (card.innerText.toLowerCase().includes(category.toLowerCase())) {
+            card.style.display = "block";
+        } else {
+            card.style.display = "none";
+        }
+
+    });
+
+}
