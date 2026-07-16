@@ -10,7 +10,7 @@ function addToCart(product) {
 
 const productsContainer = document.querySelector(".products");
 
-if (productsContainer && typeof products !== "undefined") {
+if (productsContainer && typeof dalProducts !== "undefined") {
 
     productsContainer.innerHTML = "";
 
