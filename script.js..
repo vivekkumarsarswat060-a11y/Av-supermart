@@ -14,7 +14,7 @@ if (productsContainer && typeof dalProducts !== "undefined") {
 
     productsContainer.innerHTML = "";
 
-    products.forEach(product => {
+    dalProducts.forEach(product => {
 
 let options = "";
 
