@@ -74,3 +74,50 @@ grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
 gap:20px;
 padding:20px;
 }
+.card{
+background:white;
+padding:15px;
+border-radius:10px;
+box-shadow:0 2px 8px rgba(0,0,0,.15);
+transition:.3s;
+text-align:center;
+}
+
+.card:hover{
+transform:translateY(-5px);
+box-shadow:0 6px 15px rgba(0,0,0,.2);
+}
+
+.card h3{
+color:#d60000;
+margin-bottom:10px;
+}
+
+.card p{
+margin-bottom:10px;
+color:#555;
+}
+
+.card select{
+width:100%;
+padding:8px;
+margin-bottom:12px;
+border:1px solid #ccc;
+border-radius:5px;
+}
+
+.card button{
+width:100%;
+padding:10px;
+background:#d60000;
+color:white;
+border:none;
+border-radius:5px;
+cursor:pointer;
+font-size:16px;
+font-weight:bold;
+}
+
+.card button:hover{
+background:#b30000;
+  }
