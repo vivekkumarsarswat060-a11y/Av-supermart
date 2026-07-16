@@ -6,27 +6,17 @@ font-family:Arial,sans-serif;
 }
 
 body{
-background:#111;
-color:#fff;
+background:#f5f5f5;
 }
 
-.offer{
-background:#ff3b30;
-text-align:center;
-padding:12px;
-font-weight:bold;
-font-size:18px;
-}
-
-header{
+.header{
+background:#d60000;
+color:white;
+padding:15px 20px;
 display:flex;
 justify-content:space-between;
 align-items:center;
-padding:15px 8%;
-background:#1b1b1b;
-position:sticky;
-top:0;
-z-index:1000;
+flex-wrap:wrap;
 }
 
 .logo{
@@ -36,156 +26,51 @@ gap:10px;
 }
 
 .logo img{
-height:60px;
+width:55px;
+height:55px;
+border-radius:50%;
 }
 
-.logo h2{
-color:#FFD700;
+.search-box input{
+width:300px;
+max-width:100%;
+padding:10px;
+border:none;
+border-radius:5px;
+outline:none;
+font-size:16px;
 }
 
-nav a{
-color:white;
-text-decoration:none;
-margin-left:20px;
+.cart{
+background:white;
+color:#d60000;
+padding:10px 15px;
+border-radius:6px;
 font-weight:bold;
-transition:.3s;
 }
 
-nav a:hover{
-color:#FFD700;
+.categories{
+background:white;
+padding:12px;
+display:flex;
+gap:10px;
+overflow-x:auto;
+box-shadow:0 2px 5px rgba(0,0,0,.1);
 }
 
-.hero{
-text-align:center;
-padding:80px 20px;
-background:linear-gradient(135deg,#1b1b1b,#2f2f2f);
-}
-
-.hero h1{
-font-size:48px;
-color:#FFD700;
-margin-bottom:20px;
-}
-
-.hero p{
-font-size:20px;
-margin-bottom:30px;
-}
-
-.btn,.btn2{
-display:inline-block;
-padding:12px 25px;
-border-radius:8px;
-text-decoration:none;
-font-weight:bold;
-margin:10px;
-}
-
-.btn{
-background:#FFD700;
-color:black;
-}
-
-.btn2{
-background:#25D366;
+.categories button{
+background:#d60000;
 color:white;
-}
-
-.title{
-text-align:center;
-margin:40px 0 20px;
-color:#FFD700;
+border:none;
+padding:8px 15px;
+border-radius:5px;
+cursor:pointer;
+white-space:nowrap;
 }
 
 .products{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
-gap:25px;
-padding:30px;
-}
-
-.card{
-background:#222;
-padding:20px;
-border-radius:15px;
-text-align:center;
-transition:.3s;
-}
-
-.card:hover{
-transform:translateY(-8px);
-}
-
-.card button{
-margin-top:15px;
-padding:10px 20px;
-background:#FFD700;
-border:none;
-border-radius:8px;
-font-weight:bold;
-cursor:pointer;
-}
-
-#contact{
-padding:40px;
-text-align:center;
-background:#1b1b1b;
-}
-
-footer{
-background:black;
-text-align:center;
+gap:20px;
 padding:20px;
 }
-
-@media(max-width:768px){
-
-header{
-flex-direction:column;
-}
-
-nav{
-margin-top:15px;
-}
-
-.hero h1{
-font-size:34px;
-}
-
-.products{
-grid-template-columns:1fr;
-}
-
-}
-.category-buttons{
-display:flex;
-flex-wrap:wrap;
-justify-content:center;
-gap:10px;
-margin:20px;
-}
-
-.category-buttons button{
-background:#FFD700;
-color:#000;
-border:none;
-padding:10px 18px;
-border-radius:8px;
-font-weight:bold;
-cursor:pointer;
-transition:0.3s;
-}
-
-.category-buttons button:hover{
-background:#ffb300;
-transform:scale(1.05);
-}
-
-.card select{
-width:100%;
-padding:8px;
-margin-top:10px;
-border-radius:8px;
-border:1px solid #ccc;
-font-size:15px;
-  }
