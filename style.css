@@ -217,3 +217,23 @@ background:#b30000;
 .card button:hover{
     background:#15803d;
 }
+.contact{
+    background:#374151;
+    color:#fff;
+    padding:25px;
+    text-align:center;
+    margin-top:30px;
+}
+
+.contact a{
+    color:#25D366;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+footer{
+    background:#111827;
+    color:#fff;
+    text-align:center;
+    padding:15px;
+}
