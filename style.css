@@ -140,3 +140,26 @@ background:#b30000;
     font-size:18px;
     color:#e5e7eb;
   }
+.category-bar{
+    display:flex;
+    gap:10px;
+    overflow-x:auto;
+    padding:15px;
+    margin:10px;
+}
+
+.category-bar button{
+    background:#374151;
+    color:#fff;
+    border:none;
+    padding:10px 18px;
+    border-radius:25px;
+    cursor:pointer;
+    font-weight:bold;
+    white-space:nowrap;
+    transition:.3s;
+}
+
+.category-bar button:hover{
+    background:#111827;
+}
