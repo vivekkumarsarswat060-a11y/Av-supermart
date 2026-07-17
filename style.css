@@ -340,3 +340,21 @@ footer{
     background:#111827;
     color:white;
       }
+.reviews{
+    padding:30px 20px;
+    text-align:center;
+}
+
+.review-card{
+    background:#ffffff;
+    border-radius:12px;
+    padding:20px;
+    margin:15px auto;
+    max-width:500px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.15);
+}
+
+.review-card h4{
+    color:#374151;
+    margin-top:10px;
+  }
