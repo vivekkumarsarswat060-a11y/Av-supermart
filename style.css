@@ -122,25 +122,21 @@ font-weight:bold;
 background:#b30000;
   }
 .hero{
-    background:#b30000;
+    background:#4b5563;
     color:white;
     text-align:center;
-    padding:20px;
+    padding:30px 20px;
     margin:20px;
     border-radius:15px;
-}
-
-.hero img{
-    width:100%;
-    max-width:500px;
-    border-radius:15px;
+    box-shadow:0 6px 15px rgba(0,0,0,0.2);
 }
 
 .hero h2{
-    margin-top:15px;
-    font-size:30px;
+    font-size:32px;
+    margin-bottom:10px;
 }
 
 .hero p{
     font-size:18px;
+    color:#e5e7eb;
   }
