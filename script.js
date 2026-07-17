@@ -1,4 +1,4 @@
-let cart = 0;
+let cart = [];
 
 function addToCart(product) {
     cart++;
