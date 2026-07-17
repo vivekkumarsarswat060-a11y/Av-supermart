@@ -10,18 +10,11 @@ const productsContainer = document.querySelector(".products");
 const searchBox = document.getElementById("searchBox");
 
 function displayProducts(list) {
-    productsContainer.innerHTML = "";
-
-    list.forEach(product => {
-
-        let options = "";
-
-        product.sizes.forEach(size => {
-            options += `<option>${size.size} - ₹${size.price}</option>`;
-        });
-
-        productsContainer.innerHTML += `
+    productsContainer.innerHTML += `
 <div class="card">
+
+    <span class="badge">⭐ Best Seller</span>
+
     <h3>${product.name}</h3>
 
     <p>${product.category}</p>
@@ -33,6 +26,7 @@ function displayProducts(list) {
     <button onclick="addToCart('${product.name}')">
         🛒 Add to Cart
     </button>
+
 </div>
 `;
 }
@@ -59,6 +53,7 @@ function filterProducts(category){
     const filtered = products.filter(product =>
         product.category === category
     );
-
+document.getElementById("productCount").innerText =
+"Available Products: " + products.length;
     displayProducts(filtered);
 }
