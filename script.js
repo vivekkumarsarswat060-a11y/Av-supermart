@@ -21,22 +21,20 @@ function displayProducts(list) {
         });
 
         productsContainer.innerHTML += `
-        <div class="card">
-            <h3>${product.name}</h3>
-            <p>${product.category}</p>
+<div class="card">
+    <h3>${product.name}</h3>
 
-            <select>
-                ${options}
-            </select>
+    <p>${product.category}</p>
 
-            <br><br>
+    <select>
+        ${options}
+    </select>
 
-            <button onclick="addToCart('${product.name}')">
-                Add to Cart
-            </button>
-        </div>
-        `;
-    });
+    <button onclick="addToCart('${product.name}')">
+        🛒 Add to Cart
+    </button>
+</div>
+`;
 }
 
 displayProducts(products);
