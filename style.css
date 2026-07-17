@@ -161,6 +161,7 @@ background:#b30000;
 }
 
 .category-bar button:hover{
+  
     background:#111827;
 }
 .products{
@@ -271,3 +272,33 @@ footer{
 .offer-card:hover{
     transform:translateY(-5px);
   }
+.featured{
+    background:#374151;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin:20px;
+    border-radius:15px;
+}
+
+.featured h2{
+    margin-bottom:8px;
+    font-size:28px;
+}
+
+#productCount{
+    color:#fbbf24;
+    font-weight:bold;
+    font-size:18px;
+}
+
+.badge{
+    display:inline-block;
+    background:#f59e0b;
+    color:#111827;
+    font-size:12px;
+    font-weight:bold;
+    padding:4px 8px;
+    border-radius:20px;
+    margin-bottom:8px;
+}
