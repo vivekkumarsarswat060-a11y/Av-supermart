@@ -57,3 +57,13 @@ document.getElementById("productCount").innerText =
 "Available Products: " + products.length;
     displayProducts(filtered);
 }
+function topFunction(){
+    window.scrollTo({
+        top:0,
+        behavior:"smooth"
+    });
+}
+
+function toggleTheme(){
+    document.body.classList.toggle("dark-mode");
+}
