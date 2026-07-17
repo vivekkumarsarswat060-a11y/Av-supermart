@@ -121,3 +121,26 @@ font-weight:bold;
 .card button:hover{
 background:#b30000;
   }
+.hero{
+    background:#b30000;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin:20px;
+    border-radius:15px;
+}
+
+.hero img{
+    width:100%;
+    max-width:500px;
+    border-radius:15px;
+}
+
+.hero h2{
+    margin-top:15px;
+    font-size:30px;
+}
+
+.hero p{
+    font-size:18px;
+  }
