@@ -31,8 +31,7 @@ function addProduct() {
     const name = document.getElementById("productName").value;
     const category = document.getElementById("productCategory").value;
     const price = document.getElementById("productPrice").value;
-
-    if (!name || !category || !price) {
+  const image = document.getElementById("productImage").value;  if (!name || !category || !price) {
         alert("Please fill all fields.");
         return;
     }
