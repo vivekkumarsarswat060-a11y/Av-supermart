@@ -51,11 +51,7 @@ function addProduct() {
         
 list.innerHTML += `
 <div style="background:#555;padding:12px;border-radius:10px;margin:10px 0;">
-    <h3>${item.name}</h3>
-
-    <p>Category: ${item.category}</p>
-
-    <p>Price: ₹${item.price}</p>
+    
 
     <button onclick="editProduct(${index})">✏️ Edit</button>
 
@@ -67,6 +63,14 @@ list.innerHTML += `
 
         list.innerHTML += `
         <div style="background:#555;padding:10px;border-radius:8px;margin:10px 0;">
+          <img src="${item.image}" 
+     style="width:80px;height:80px;border-radius:8px;object-fit:cover;"><br><br>
+
+<h3>${item.name}</h3>
+
+<p>Category: ${item.category}</p>
+
+<p>Price: ₹${item.price}</p> 
             <b>${item.name}</b><br>
             ${item.category}<br>
             ₹${item.price}
@@ -105,6 +109,6 @@ localStorage.setItem("products", JSON.stringify(products));
         
         showProducts();
 
-    }
+    } 
 
 }
