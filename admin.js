@@ -47,20 +47,22 @@ function addProduct() {
 
     document.getElementById("productName").value = "";
     document.getElementById("productCategory").value = "";
-    document.getElementById("productPrice").value = "";
-}
+    document.getElementById("productPrice").value =
+        
+list.innerHTML += `
+<div style="background:#555;padding:12px;border-radius:10px;margin:10px 0;">
+    <h3>${item.name}</h3>
 
-function showProducts() {
+    <p>Category: ${item.category}</p>
 
-    const list = document.getElementById("productList");
+    <p>Price: ₹${item.price}</p>
 
-    if(products.length===0){
-        list.innerHTML="No Products Added";
-        return;
-    }
+    <button onclick="editProduct(${index})">✏️ Edit</button>
 
-    list.innerHTML="";
+    <button onclick="deleteProduct(${index})">🗑️ Delete</button>
 
+</div>
+`;
     products.forEach((item,index)=>{
 
         list.innerHTML += `
