@@ -102,7 +102,8 @@ function editProduct(index) {
     if (newPrice !== null && newPrice !== "") {
 
         products[index].price = newPrice;
-
+localStorage.setItem("products", JSON.stringify(products));
+        
         showProducts();
 
     }
