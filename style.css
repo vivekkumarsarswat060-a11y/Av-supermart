@@ -358,3 +358,15 @@ footer{
     color:#374151;
     margin-top:10px;
   }
+.stock{
+    font-weight:bold;
+    margin:8px 0;
+}
+
+.in{
+    color:#00c853;
+}
+
+.out{
+    color:#ff1744;
+}
