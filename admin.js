@@ -90,7 +90,7 @@ list.innerHTML += `
 function deleteProduct(index) {
 
     products.splice(index, 1);
-
+localStorage.setItem("products", JSON.stringify(products));
     showProducts();
 
 }
