@@ -68,9 +68,17 @@ AV Supermart Admin Dashboard
 </div>
 <div class="card">
     <h2>Add Product</h2>
-   <input type="text" id="productImage" placeholder="Product Image URL"><br><br> 
-    <input type="number" id="productPrice" placeholder="Price"><br><br>
 
+
+    <input type="text" id="productImage" placeholder="Product Image URL"><br><br> 
+<select id="productStock">
+    <option value="In Stock">In Stock</option>
+    <option value="Out of Stock">Out of Stock</option>
+</select>
+<br><br>
+    <input type="number" id="productPrice" placeholder="Price"><br><br>
+    
+    
 <button onclick="addProduct()">Add Product</button>
 
     <input type="file" id="productImage" accept="image/*"><br><br>
