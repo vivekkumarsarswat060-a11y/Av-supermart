@@ -25,7 +25,7 @@ function addProduct() {
         alert("Please fill all fields.");
         return;
     }
-    let products = [];
+    let products = JSON.parse(localStorage.getItem("products")) || [];
 
 function addProduct() {
     const name = document.getElementById("productName").value;
