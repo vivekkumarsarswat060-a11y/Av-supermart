@@ -38,9 +38,12 @@ function addProduct() {
     }
 
     products.push({
-        name,
-        category,
-        price
+    name,
+    category,
+    price,
+    image,
+    stock
+});
     });
     localStorage.setItem("products", JSON.stringify(products));
 
