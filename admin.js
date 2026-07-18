@@ -16,3 +16,22 @@ function login() {
     }
 
 }
+function addProduct() {
+    const name = document.getElementById("productName").value;
+    const category = document.getElementById("productCategory").value;
+    const price = document.getElementById("productPrice").value;
+
+    if (!name || !category || !price) {
+        alert("Please fill all fields.");
+        return;
+    }
+
+    alert("Product Added Successfully!\n\n" +
+          "Name: " + name +
+          "\nCategory: " + category +
+          "\nPrice: ₹" + price);
+
+    document.getElementById("productName").value = "";
+    document.getElementById("productCategory").value = "";
+    document.getElementById("productPrice").value = "";
+          }
