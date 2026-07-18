@@ -30,7 +30,11 @@ function displayProducts(list) {
 </div>
 `;
 }
+const adminProducts = JSON.parse(localStorage.getItem("products")) || [];
 
+adminProducts.forEach(product => {
+    products.push(product);
+});
 displayProducts(products);
 
 searchBox.addEventListener("keyup", function () {
