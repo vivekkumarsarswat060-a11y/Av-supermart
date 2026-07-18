@@ -18,7 +18,9 @@ ${product.image ? `<img src="${product.image}" style="width:100%;height:180px;ob
     <h3>${product.name}</h3>
 
     <p>${product.category}</p>
-
+<p class="stock ${product.stock === 'Out of Stock' ? 'out' : 'in'}">
+    ${product.stock || 'In Stock'}
+</p>
     <select>
         ${options}
     </select>
