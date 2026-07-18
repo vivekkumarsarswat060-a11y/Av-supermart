@@ -86,3 +86,24 @@ list.innerHTML += `
     document.getElementById("productCategory").value = "";
     document.getElementById("productPrice").value = "";
           }
+function deleteProduct(index) {
+
+    products.splice(index, 1);
+
+    showProducts();
+
+}
+
+function editProduct(index) {
+
+    let newPrice = prompt("Enter New Price", products[index].price);
+
+    if (newPrice !== null && newPrice !== "") {
+
+        products[index].price = newPrice;
+
+        showProducts();
+
+    }
+
+}
