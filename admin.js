@@ -75,6 +75,7 @@ list.innerHTML += `
 <p>Category: ${item.category}</p>
 
 <p>Price: ₹${item.price}</p> 
+<p><b>Stock:</b> ${item.stock}</p>
             <b>${item.name}</b><br>
             ${item.category}<br>
             ₹${item.price}
