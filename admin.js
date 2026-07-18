@@ -42,6 +42,7 @@ function addProduct() {
         category,
         price
     });
+    localStorage.setItem("products", JSON.stringify(products));
 
     showProducts();
 
